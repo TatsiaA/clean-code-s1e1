@@ -1,27 +1,27 @@
 /* Basic Style */
-body {
+.body {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.info {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.info__img {
     width: 100%;
 }
-.aaa .more_inf {
+.info__details {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.info { text-align: center;
 }
 }
-.centered-main-page-element {
+.tasks-list {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -31,7 +31,7 @@ body {
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.tasks-list__add__row {
     display: flex;
 }
 ul {
