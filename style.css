@@ -21,7 +21,7 @@
 .info { text-align: center;
 }
 }
-.tasks-list {
+.tasks {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -31,7 +31,7 @@
     display: inline-block;
     flex-grow: 1
 }
-.tasks-list__add__row {
+.tasks__add_row {
     display: flex;
 }
 ul {
