@@ -37,7 +37,7 @@ var createNewTaskElement=function(taskString){
 
     //Each elements, needs appending
 
-    listItem.className="tasks__todo_task";
+    listItem.className="tasks__todo-task";
 
     checkBox.type="checkbox";
     checkBox.className="checkbox";
@@ -129,8 +129,8 @@ var taskCompleted=function(){
     var listItem=this.parentNode;
     var label=listItem.querySelector("label");
     var input=listItem.querySelector(".task");
-    label.classList.add('tasks__completed_task-label');
-    input.classList.add('tasks__completed_task-label');
+    label.classList.add('tasks__completed-label');
+    input.classList.add('tasks__completed-label');
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
@@ -145,8 +145,8 @@ var taskIncomplete=function(){
     var listItem=this.parentNode;
     var label=listItem.querySelector("label");
     var input=listItem.querySelector(".task");
-    label.classList.remove('tasks__completed_task-label');
-    input.classList.remove('tasks__completed_task-label');
+    label.classList.remove('tasks__completed-label');
+    input.classList.remove('tasks__completed-label');
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }
